@@ -1,0 +1,26 @@
+.row
+{
+        background-color: whitesmoke;
+        padding: 20px;
+        width: auto;
+        height: auto;
+}
+.card
+{
+    background-size: cover;
+    width: 400px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+.card:hover {
+    box-shadow: 1px 4px 9px black;
+    
+  }
+  .button
+  {
+    width: 100%;
+  }
+  .anger
+  {
+    text-decoration: none;
+    color: white;
+  }

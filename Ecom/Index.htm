@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <style>
+      body {
+        padding-top: 60px;
+      }
+    </style>
+    <link rel="stylesheet" href="./css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Buy and Sell</a>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" disabled placeholder="Sell Anything here" aria-label="Search">
+            <button class="btn btn-success" type="submit" disabled>Browse</button>
+          </form>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Buy and Sell</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Authentication
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="./sign.html">Sign Up</a></li>
+                    <li><a class="dropdown-item" href="./login.htm">Sign In</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Any Query Contect to Email</a></li>
+                  </ul>
+                </li>
+              </ul>
+             
+            </div>
+          </div>
+        </div>
+        </nav>
+        
+  <div class="container">
+    <h1>Welcome to our E-Commerce Website</h1>
+    <p>Explore our wide range of products!</p>
+  </div>
+
+  <div class="row">
+    <!-- Product Item 1 -->
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card h-100">
+        <img class="card-img-top" src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-card-40-iphone15prohero-202309_FMT_WHH?wid=508&hei=472&fmt=p-jpg&qlt=95&.v=1693086369818" alt="iPhone Image">
+        <div class="card-body">
+          <h4 class="card-title">iPhone</h4>
+          <h5>INR 99999.99</h5>
+          <p class="card-text">The latest iPhone model with amazing features.</p>           
+        </div>
+        <div><a href="./payment.htm" class="anger"><button type="button" class="btn btn-primary btn-lg btn-block button">Click To Buy</button></a></div>
+      </div>
+    </div>
+
+    <!-- Product Item 2 -->
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card h-100">
+        <img class="card-img-top" src="https://lh3.googleusercontent.com/spp/AE_ITi2TkQLOI8sMaCc72b3BQhFMwyBXu9N9ZNVQjKPLIP5o1bcJ7gaVtr2VO_lPgM0OnUouBXCSFzHvuq0i2Q-_aJ-xLZV2JV4CBn1QXTLoREZYVjZF5ggvLNwCkapYaAWLlPLBQemZBnAYojxJRIBu0QpqnxOjlUq8aW_1VMxE3RN8zp76VU3Sj7hk6AM205SrXe2miIiaga4=s512-rw-pd-pc0x00ffffff" alt="Oppo Image">
+        <div class="card-body">
+          <h4 class="card-title">Oppo Phone</h4>
+          <h5>INR 80599.99</h5>
+          <p class="card-text">High-quality Oppo smartphone with advanced features.</p>
+        </div>
+        <div><button type="button" class="btn btn-primary btn-lg btn-block button"><a href="./payment.htm" class="anger">Click To Buy</a></button></div> 
+      </div>
+    </div>
+
+    <!-- Product Item 3 -->
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card h-100">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/71q9ajWGXWL._AC_UF1000,1000_QL80_.jpg" alt="Headphones Image">
+        <div class="card-body">
+          <h4 class="card-title">Wireless Headphones</h4>
+          <h5>INR 2000</h5>
+          <p class="card-text">Comfortable and stylish wireless headphones for immersive audio experience.</p>
+        </div>
+        <div><button type="button" class="btn btn-primary btn-lg btn-block button"><a href="./payment.htm" class="anger">Click To Buy</a></button></div> 
+      </div>
+    </div>
+
+    <!-- Product Item 4 -->
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card h-100">
+        <img class="card-img-top" src="https://www.fireboltt.com/cdn/shop/files/1_6_540x.png?v=1704875687" alt="Smartwatch Image">
+        <div class="card-body">
+          <h4 class="card-title">Smartwatch</h4>
+          <h5>INR 12000</h5>
+          <p class="card-text">Track your fitness and receive notifications with our latest smartwatch.</p>
+        </div>
+        <div><button type="button" class="btn btn-primary btn-lg btn-block button"><a href="./payment.htm" class="anger">Click To Buy</a></button></div> 
+      </div>
+    </div>
+
+    <!-- Product Item 5 -->
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card h-100">
+        <img class="card-img-top" src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mba-digitalmat-gallery-2-202111?wid=728&hei=666&fmt=png-alpha&.v=1664581580690" alt="Laptop Image">
+        <div class="card-body">
+          <h4 class="card-title">Laptop</h4>
+          <h5>INR 112000</h5>
+          <p class="card-text">Powerful and lightweight laptop for your everyday needs.</p>
+        </div>
+        <div><button type="button" class="btn btn-primary btn-lg btn-block button"><a href="./payment.htm" class="anger">Click To Buy</a></button></div> 
+      </div>
+    </div>
+
+    <!-- Product Item 6 -->
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card h-100">
+        <img class="card-img-top" src="https://www.gearsoffuture.com/cdn/shop/files/1_513c67b6-63c0-43a4-b282-694b38b17127_720x.jpg?v=1694752881" alt="Camera Image">
+        <div class="card-body">
+          <h4 class="card-title">Digital Camera</h4>
+          <h5>INR 20000</h5>
+          <p class="card-text">Capture stunning moments with our high-resolution digital camera.</p>
+        </div>
+        <div><button type="button" class="btn btn-primary btn-lg btn-block button"><a href="./payment.htm" class="anger">Click To Buy</a></button></div> 
+      </div>
+    </div>
+
+    <!-- Add more product items as needed -->
+
+  </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
